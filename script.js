@@ -2,7 +2,7 @@ const extendHex = (shortHex) => {
   // write your code her
 	let ans = '#';
 	if(shortHex.length === 3){
-		shortHex = shortHex + '#';
+		shortHex = '#' + shortHex;
 	}
 	if(shortHex[1] === shortHex[1].toUpperCase()){
 		shortHex = shortHex.toUpperCase();
@@ -13,8 +13,8 @@ const extendHex = (shortHex) => {
 		ans += shortHex[i];
 	}
 	return ans;
-};
+}; 
 
 // Do not change the code below.
-const shortHex = prompt("Enter Short Hex.");
-alert(extendHex(shortHex));   
+// const shortHex = prompt("Enter Short Hex.");
+// alert(extendHex(shortHex));   

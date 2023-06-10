@@ -1,7 +1,9 @@
 const extendHex = (shortHex) => {
   // write your code her
 	let ans = '#';
-
+	if(shortHex.length === 3){
+		shortHex = shortHex + '#';
+	}
 	if(shortHex[1] === shortHex[1].toUpperCase()){
 		shortHex = shortHex.toUpperCase();
 	}
